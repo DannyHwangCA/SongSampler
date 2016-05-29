@@ -1,6 +1,6 @@
 var url = chrome.extension.getURL('toolbar.html');
 var height = '35px';
-var iframe = "<iframe src='"+url+"' id='SongByContext' style='height:"+height+"'></iframe>";
+var iframe = "<iframe src='"+url+"' id='SongByContextIsTheBest' style='height:"+height+"'></iframe>";
 
 $('html').append(iframe);
 
