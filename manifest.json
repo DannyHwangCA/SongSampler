@@ -1,0 +1,31 @@
+{
+  "manifest_version": 2,
+
+  "name": "Twitter Toolkit",
+  "description": "Share Text and images on your browser to Twitter Fast!",
+  "background": {
+    "scripts": ["background.js"]
+  },
+  "version": "1.0",
+  "icons": {
+    "64" : "icon.png",
+    "32" : "icon.png",
+    "16" : "icon.png",
+    "128" : "icon.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["http://*/*", "https://*/*"],
+      "css": ["style.css"],
+      "js": ["jquery.js", "myScript.js"]
+    }
+  ],
+  "web_accessible_resources": [
+    "toolbar.html",
+    "style.css"
+  ],
+  "permissions": [
+    "contextMenus",
+    "tabs"
+  ]
+}
