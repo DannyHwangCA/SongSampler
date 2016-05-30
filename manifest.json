@@ -3,6 +3,9 @@
 
   "name": "Twitter Toolkit",
   "description": "Share Text and images on your browser to Twitter Fast!",
+  "browser_action": {
+    "default_popup": "index.html"
+  },
   "background": {
     "scripts": ["background.js"]
   },
@@ -26,6 +29,7 @@
   ],
   "permissions": [
     "contextMenus",
-    "tabs"
+    "tabs",
+    "storage"
   ]
 }

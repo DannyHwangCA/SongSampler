@@ -7,5 +7,8 @@ chrome.contextMenus.create({
 });
 
 function myFunction(selectedText) {
-	chrome.tabs.create({url: "http://twitter.com/share?text="+selectedText.selectionText})
+	var myUrl = "https://api.spotify.com/v1/search?q="+selectedText.selectionText+"&type=track&market=US"
+	fixedUrl = myUrl.replace(" ", "")
+	console.log(fixedUrl)
+	// chrome.tabs.create({url: "http://twitter.com/share?text="+selectedText.selectionText})
 }
